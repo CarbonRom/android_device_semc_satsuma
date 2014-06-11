@@ -15,13 +15,15 @@
 -include device/semc/mogami-common/BoardConfigCommon.mk
 -include vendor/semc/satsuma/BoardConfigVendor.mk
 
-TARGET_SPECIFIC_HEADER_PATH += device/semc/satsuma/include
+TARGET_SPECIFIC_HEADER_PATH += device/semc/satsuma/include \
+
+$(shell mkdir -p out/target/product/satsuma/obj/KERNEL_OBJ/usr)
 
 # Bluetooth
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/semc/satsuma/bluedroid
 
 # Kernel
-TARGET_KERNEL_CONFIG := lx_satsuma_defconfig
+TARGET_KERNEL_CONFIG := nAa_satsuma_defconfig
 
 # Sensors
 SOMC_CFG_SENSORS_ACCEL_BMA250_INPUT := yes

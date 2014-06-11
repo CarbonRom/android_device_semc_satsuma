@@ -12,4 +12,4 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-add_lunch_combo cm_satsuma-eng
+add_lunch_combo carbon_satsuma-userdebug
